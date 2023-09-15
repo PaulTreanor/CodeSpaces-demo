@@ -17,6 +17,10 @@ Demos are ironically the perfect usecase for a CodeSpace.
 6. Share the link with everyone 
 7. Make some sort of change 
 
+## Setup (secret)
+1. Make sure I have another port open on my Mac 
+2. Get your `.devcontainer.json` setup with eslint etc
+
 ## Issues I'll run into 
 1. Cloning it 
 2. Port conflict
