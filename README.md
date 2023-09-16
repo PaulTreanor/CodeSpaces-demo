@@ -5,8 +5,10 @@ Demos are ironically the perfect usecase for a CodeSpace.
 ## Creating the app
 - ~~Create frontend (React)~~
 - Write some FE tests
-- Create backend 
+- ~~Create backend~~ 
+- Get frontend and backend working nicely together
 - Write some backend tests
+- Write end to end tests
 
 ## Instructions 
 1. Clone the repository]
