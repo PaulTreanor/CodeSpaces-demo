@@ -10,6 +10,7 @@ Demos are ironically the perfect usecase for a CodeSpace.
 - Write some backend tests
 - Write end to end tests
 - Make the app look nice 
+- ~~Create architecture diagram~~
 
 ## Instructions 
 1. Clone the repository]
@@ -30,6 +31,7 @@ Demos are ironically the perfect usecase for a CodeSpace.
 ## Setup (secret)
 1. Make sure I have another port open on my Mac 
 2. Get your `.devcontainer.json` setup with eslint etc
+3. (+ keyboard shortcuts, extensions, disable minimap)
 
 ## Issues I'll run into 
 1. Cloning it 
