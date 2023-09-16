@@ -1,22 +1,18 @@
-import './App.css'
-
 function App () {
-  const fetchCatImage = async (): Promise<void> => {
+  const fetchCatImage = async () => {
     try {
-      // Fetch image blob from the API
-      const response = await fetch('http://localhost:3000/', {
-        method: 'GET'
-      })
+      const response = await fetch('http://localhost:3000/', { method: 'GET' })
 
-      // Check if request was successful
       if (response.ok) {
-        // Create a blob URL from the fetched image blob
         const blob = await response.blob()
         const blobURL = URL.createObjectURL(blob)
-
-        // Find the existing img element and update its src to blobURL
         const catImageElement = document.getElementById('catImage')
-        catImageElement.src = blobURL
+
+        if (catImageElement) {
+          catImageElement.src = blobURL
+        } else {
+          console.error('Image element not found.')
+        }
       } else {
         console.error('Failed to fetch cat image.')
       }
@@ -27,13 +23,9 @@ function App () {
 
   return (
     <>
-      <h1>Random Cats 😻</h1>
-      <div className="card">
-        <img id="catImage"/>
-        <button onClick={fetchCatImage}>
-          Get a cat!
-        </button>
-      </div>
+      <h1 className="text-xl font-semibold text-gray-900">Random Cats 😻</h1>
+      <button onClick={fetchCatImage} className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none ">Get a cat!</button>
+      <img id="catImage" className="object-contain h-48 w-96" />
     </>
   )
 }

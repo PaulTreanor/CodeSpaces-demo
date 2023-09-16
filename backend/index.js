@@ -2,7 +2,7 @@ const https = require('https')
 
 module.exports.handler = async (event) => {
   return new Promise((resolve, reject) => {
-    https.get('https://cataas.com/cat', (response) => {
+    https.get('https://cataas.com/cat/gif', (response) => {
       const chunks = []
 
       // Concatenate the chunks of data into a single buffer
