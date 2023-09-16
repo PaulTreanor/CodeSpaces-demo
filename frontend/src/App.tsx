@@ -4,7 +4,7 @@ function App () {
   const fetchCatImage = async (): Promise<void> => {
     try {
       // Fetch image blob from the API
-      const response = await fetch('https://cataas.com/cat', {
+      const response = await fetch('http://localhost:3000/', {
         method: 'GET'
       })
 
