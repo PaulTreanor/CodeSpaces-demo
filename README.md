@@ -3,7 +3,7 @@ Demo app for BelfastJS GitHub CodeSpaces talk.
 Demos are ironically the perfect usecase for a CodeSpace. 
 
 ## Creating the app
-- Create frontend (React)
+- ~~Create frontend (React)~~
 - Write some FE tests
 - Create backend 
 - Write some backend tests
@@ -11,11 +11,18 @@ Demos are ironically the perfect usecase for a CodeSpace.
 ## Instructions 
 1. Clone the repository]
 2. `npm install`
-3. Deploy frontend (`cd frontend & npm run`)
-4. Run backend locally (`serverless offline`)
+3. Start backend first (`serverless offline`)
+4. Start frontend (`cd frontend & npm run`)
 5. Run the tests and linting 
 6. Share the link with everyone 
 7. Make some sort of change 
+
+
+#### Setup the Serverless Framework
+`npm install -g serverless`
+
+
+
 
 ## Setup (secret)
 1. Make sure I have another port open on my Mac 
