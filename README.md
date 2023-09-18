@@ -4,16 +4,15 @@ Demos are ironically the perfect usecase for a CodeSpace.
 
 ## Creating the app
 - ~~Create frontend (React)~~
-- Write some FE tests
 - ~~Create backend~~ 
 - ~~Get frontend and backend working nicely together~~
-- Write some backend tests
-- Write end to end tests
-- Make the app look nice 
+- ~~Make the app look nice~~ 
 - ~~Create architecture diagram~~
+- Complete `README.md` changes
+- Get your `.devcontainer.json` file setup
 
 ## Instructions 
-1. Clone the repository]
+1. Clone the repository
 2. `npm install`
 3. Start backend first (`serverless offline`)
 4. Start frontend (`cd frontend & npm run`)
