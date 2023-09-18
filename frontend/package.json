@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
+    "dev": "node setEnv.js && vite",
+    "build": "node setEnv.js && tsc && vite build",
     "lint": "npx eslint ./src/**",
     "preview": "vite preview"
   },

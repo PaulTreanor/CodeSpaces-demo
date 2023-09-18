@@ -1,7 +1,12 @@
+const codeSpaceName = import.meta.env.VITE_CODESPACE_NAME || 'localhost'
+const baseURL = codeSpaceName !== 'localhost'
+  ? `https://${codeSpaceName}-3000.app.github.dev/`
+  : 'http://localhost:3000/'
+
 function App () {
   const fetchCatImage = async () => {
     try {
-      const response = await fetch('http://localhost:3000/', { method: 'GET' })
+      const response = await fetch(baseURL, { method: 'GET' })
 
       if (response.ok) {
         const blob = await response.blob()
