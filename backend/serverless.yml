@@ -4,18 +4,6 @@ frameworkVersion: '3'
 provider:
   name: aws
   runtime: nodejs18.x
-  httpApi:
-    cors:
-      allowedOrigins:
-        - '*'
-      allowedHeaders:
-        - Content-Type
-        - 'X-Requested-With'
-        - Authorization
-      allowedMethods:
-        - OPTIONS
-        - GET
-        - POST
 
 functions:
   api:
