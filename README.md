@@ -9,10 +9,12 @@ Demos are ironically the perfect usecase for a CodeSpace.
 - ~~Make the app look nice~~ 
 - ~~Create architecture diagram~~
 - Complete `README.md` changes
+- Fix any linting errors 
 
 ## Instructions 
 1. Clone the repository
 2. `npm install`
+3. Install serverless framework 
 3. Start backend first (`serverless offline`)
 4. Start frontend (`cd frontend & npm run`)
 5. Run the tests and linting 
@@ -20,17 +22,13 @@ Demos are ironically the perfect usecase for a CodeSpace.
 7. Make some sort of change 
 
 
-#### Setup the Serverless Framework
-`npm install -g serverless`
-
-
-
-
 ## Setup (secret)
 1. Set up `bind-port` on my mac
+2. Remove write permissions for `npm` dir
+3. Change your node version - `sudo n 10.16.0`
 
 
-
+**Uninstall serverless framework globally before talk**
 2. Get your `.devcontainer.json` setup with eslint etc
 3. (+ keyboard shortcuts, extensions, disable minimap)
 
