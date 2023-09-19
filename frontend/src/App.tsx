@@ -1,10 +1,11 @@
+import type { ReactNode } from 'react'
 const codeSpaceName = import.meta.env.VITE_CODESPACE_NAME || 'localhost'
 const baseURL = codeSpaceName !== 'localhost'
   ? `https://${codeSpaceName}-3000.app.github.dev/`
   : 'http://localhost:3000/'
 
-function App () {
-  const fetchCatImage = async () => {
+function App (): ReactNode {
+  const fetchCatImage = async (): Promise<void> => {
     try {
       const response = await fetch(baseURL, { method: 'GET' })
 
