@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react'
+
 const codeSpaceName = import.meta.env.VITE_CODESPACE_NAME || 'localhost'
 const baseURL = codeSpaceName !== 'localhost'
   ? `https://${codeSpaceName}-3000.app.github.dev/`
@@ -14,7 +15,7 @@ function App (): ReactNode {
         const blobURL = URL.createObjectURL(blob)
         const catImageElement = document.getElementById('catImage')
 
-        if (catImageElement) {
+        if (catImageElement != null) {
           catImageElement.src = blobURL
         } else {
           console.error('Image element not found.')
