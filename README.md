@@ -1,6 +1,9 @@
 # CodeSpaces-demo
 Demo app for BelfastJS GitHub CodeSpaces talk. 
 
+![Architecture](./architecture.png)
+
+
 ## Launch backend
 ```bash
 cd backend
